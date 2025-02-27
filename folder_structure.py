@@ -15,7 +15,7 @@ files_list = [
     ".env",
     "setup.py",
     "app.py",
-    "research/trials.ipynb",
+    "code/experiment.ipynb",
    " test.py"
 ]
 
