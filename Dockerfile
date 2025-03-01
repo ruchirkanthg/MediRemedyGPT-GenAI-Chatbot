@@ -31,8 +31,8 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean
 
 # Copy requirements.txt first to avoid unnecessary rebuilds
-COPY requirements.txt .
-
+COPY setup.py .  
+COPY requirements.txt . 
 # Upgrade pip first (recommended)
 RUN pip install --upgrade pip
 
