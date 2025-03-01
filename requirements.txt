@@ -1,12 +1,12 @@
 langchain
 sentence-transformers==2.2.2
 flask
-pypdf2
+pypdf
 python-dotenv
 langchain_pinecone
 langchain_community
 langchain_google_genai
 langchain_core
 langchain_experimental
-# -e .
+-e .
 
