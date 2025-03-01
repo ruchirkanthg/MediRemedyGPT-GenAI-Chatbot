@@ -1,9 +1,44 @@
+# FROM python:3.13.2-slim
+
+# WORKDIR /app
+
+# COPY . /app
+
+# RUN pip install -r requirements.txt
+
+# CMD ["python3", "app.py"]
+
+
 FROM python:3.13.2-slim
 
+# Set working directory
 WORKDIR /app
 
-COPY . /app
+# Install system dependencies required for package builds
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    make \
+    build-essential \
+    python3-dev \
+    libssl-dev \
+    libffi-dev \
+    libxml2-dev \
+    libxslt1-dev \
+    zlib1g-dev \
+    && apt-get clean
 
-RUN pip install -r requirements.txt
+# Copy requirements.txt first to avoid unnecessary rebuilds
+COPY requirements.txt .
 
+# Upgrade pip first (recommended)
+RUN pip install --upgrade pip
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the project files
+COPY . .
+
+# Set the default command
 CMD ["python3", "app.py"]
