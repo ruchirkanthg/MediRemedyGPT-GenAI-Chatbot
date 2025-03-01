@@ -8,5 +8,5 @@ langchain_community
 langchain_google_genai
 langchain_core
 langchain_experimental
--e .
+# -e .
 
