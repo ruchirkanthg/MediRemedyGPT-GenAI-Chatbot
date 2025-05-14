@@ -81,6 +81,7 @@ Project Structure
 
 The repository is organized as follows:
 
+<pre><code> 
 MediRemedyGPT-GenAI-Chatbot/
 ├── .github/             # GitHub workflows and configurations
 ├── Data/                # Dataset files used for training or retrieval
@@ -92,6 +93,7 @@ MediRemedyGPT-GenAI-Chatbot/
 ├── Dockerfile           # Docker configuration for containerization
 ├── README.md            # Project documentation
 └── .env                 # Environment variables (not included in the repository)
+</code></pre>
 
 Docker Deployment (Optional)
 Refer to the Dockerfile to containerize the application. 
