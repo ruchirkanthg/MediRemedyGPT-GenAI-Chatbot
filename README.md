@@ -5,8 +5,6 @@ The End-to-End Medical Chatbot Generative AI Project involved building a sophist
 The deployment pipeline utilized Docker for containerization, enabling consistent application performance across different environments. The project leveraged AWS EC2 instances for hosting the chatbot, providing scalability and reliability. The AWS IAM (Identity and Access Management) service was used to securely manage access to AWS resources, ensuring security best practices. The Docker images were stored and managed in AWS ECR (Elastic Container Registry), facilitating seamless integration with CI/CD pipelines managed through GitHub Actions. The CI/CD pipeline automated processes including testing, building, pushing Docker images to ECR, and deploying the application on EC2, promoting a continuous deployment strategy. Langchain’s framework was instrumental in managing prompt chaining, maintaining contextual conversations, and supporting complex dialogue flows. The RAG approach combined with Pinecone’s vector search ensured that responses were not only generated but also rooted in reliable medical sources. The holistic use of cloud services, automation tools, and AI technologies led to the development of a robust, scalable, and secure medical chatbot capable of enhancing patient engagement and supporting healthcare professionals.
 
 
-Here’s a comprehensive README file for the MediRemedyGPT-GenAI-Chatbot project, providing clear, step-by-step instructions to set up and use the application.
-
 ⸻
 
 MediRemedyGPT-GenAI-Chatbot
